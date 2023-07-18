@@ -25,3 +25,10 @@ result = binary(num_arr, target_number)
 num_arr = [1, 2, 3, 4, 5, 6, 7]
 target_number = 8
 result = binary(num_arr, target_number)
+
+ip：8.217.98.31
+ssh端口：56704
+ssh用户名：root
+ssh密码：c1acf7d0ee8259a5
+socks5端口:56904
+
