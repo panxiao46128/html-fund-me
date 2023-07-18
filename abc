@@ -1,0 +1,16 @@
+yarn run v1.22.19
+$ /home/pan4612/hardhat-nft-market/node_modules/.bin/hardhat run scripts/connect.js
+Error: Cannot find module 'web3'
+Require stack:
+- /home/pan4612/hardhat-nft-market/scripts/connect.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:931:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:27)
+    at Module.require (internal/modules/cjs/loader.js:1003:19)
+    at require (internal/modules/cjs/helpers.js:107:18)
+    at Object.<anonymous> (/home/pan4612/hardhat-nft-market/scripts/connect.js:1:14)
+    at Module._compile (internal/modules/cjs/loader.js:1114:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+    at Module.load (internal/modules/cjs/loader.js:979:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:819:12)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)
+error Command failed with exit code 1.
