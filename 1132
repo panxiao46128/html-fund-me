@@ -1,0 +1,19 @@
+root@2d70b7fdae3c:~/panxiao46128# git commit -m "new commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'root@2d70b7fdae3c.(none)')
+root@2d70b7fdae3c:~/panxiao46128# git diff master..new-branch
+fatal: ambiguous argument 'master..new-branch': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+root@2d70b7fdae3c:~/panxiao46128#
