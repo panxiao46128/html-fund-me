@@ -1,12 +1,21 @@
-/home/pan4612/hardhat-nft-market/scripts/connect.js:5
-const web3 = new Web3(alchemy_url);
-             ^
-TypeError: Web3 is not a constructor
-    at Object.<anonymous> (/home/pan4612/hardhat-nft-market/scripts/connect.js:5:14)
-    at Module._compile (node:internal/modules/cjs/loader:1198:14)
-    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
-    at Module.load (node:internal/modules/cjs/loader:1076:32)
-    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
-    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
-    at node:internal/main/run_main_module:22:47
-error Command failed with exit code 1.
+import threading
+lock = threading.Lock()
+def factorial(n):
+fact = 1
+for i in range(1, n + 1):
+fact *= i
+
+print(f" {n}! = {fact}")
+
+with lock:
+with open("results.txt", "a") as f:
+f.write(f"The factorial of {n} is {fact}\n")
+
+threads = []
+for i in range(1, 101):
+t = threading.Thread(target=factorial, args=(i,))
+t.start()
+threads.append(t)
+
+for t in threads:
+t.join()
