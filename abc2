@@ -1,0 +1,27 @@
+def binary(arr, num):
+low = 0
+high = len(arr) - 1
+mid = 0
+
+while low <= high:
+
+mid = (high + low) // 2
+
+if arr[mid] < num:
+low = mid + 1
+
+elif arr[mid] > num:
+high = mid - 1
+
+else:
+print("Element is present at index", mid)
+return True
+print("Element is not present in array")
+
+num_arr = [2, 3, 4, 5, 6, 7]
+target_number = 4
+result = binary(num_arr, target_number)
+
+num_arr = [1, 2, 3, 4, 5, 6, 7]
+target_number = 8
+result = binary(num_arr, target_number)
